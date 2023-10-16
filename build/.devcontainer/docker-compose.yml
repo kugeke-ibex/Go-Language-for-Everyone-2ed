@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  golang:
+    container_name: golang
+    build:
+      context: .
+      dockerfile: ../golang/Dockerfile
+    volumes:
+      - type: bind
+        source: "../../"
+        target: "/go/src"
+        consistency: cached
+    command:
+      /bin/sh -c "while sleep 1000; do :; done"
+      /bin/bash
+    tty: true
