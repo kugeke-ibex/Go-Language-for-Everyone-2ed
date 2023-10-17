@@ -33,7 +33,7 @@
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "cat /etc/os-release",
-	"postAttachCommand": "/bin/sh .devcontainer/postAttach.sh",
+	"postAttachCommand": "/bin/sh ./build/.devcontainer/postAttach.sh",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
