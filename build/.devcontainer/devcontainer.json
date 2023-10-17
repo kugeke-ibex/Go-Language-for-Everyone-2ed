@@ -48,50 +48,50 @@
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
                 "golang.Go",
-				"rangav.vscode-thunder-client",
+								"rangav.vscode-thunder-client",
                 "mhutchie.git-graph",
                 "eamodio.gitlens",
                 "EditorConfig.EditorConfig",
-				"rangav.vscode-thunder-client",
-				"ms-vscode.live-server",
-				"streetsidesoftware.code-spell-checker",
-				"naumovs.color-highlight",
-				"Gruntfuggly.todo-tree",
-				"christian-kohler.path-intellisense",
-				"dbaeumer.vscode-eslint",
-				"donjayamanne.githistory",
-				"esbenp.prettier-vscode",
-				"oderwat.indent-rainbow",
-				"stylelint.vscode-stylelint",
-				"VisualStudioExptTeam.vscodeintellicode",
-				"vscode-icons-team.vscode-icons",
-				"wix.vscode-import-cost"
+								"rangav.vscode-thunder-client",
+								"ms-vscode.live-server",
+								"streetsidesoftware.code-spell-checker",
+								"naumovs.color-highlight",
+								"Gruntfuggly.todo-tree",
+								"christian-kohler.path-intellisense",
+								"dbaeumer.vscode-eslint",
+								"donjayamanne.githistory",
+								"esbenp.prettier-vscode",
+								"oderwat.indent-rainbow",
+								"stylelint.vscode-stylelint",
+								"VisualStudioExptTeam.vscodeintellicode",
+								"vscode-icons-team.vscode-icons",
+								"wix.vscode-import-cost"
             ],
-			// VSCodeの設定を記述 .vscodeフォルダの代わりになる（らしい）
-			"settings": {
-				"terminal.integrated.defaultProfile.linux": "bash",
-				"go.toolsManagement.checkForUpdates": "local",
-				"go.useLanguageServer": true,
-				"go.goroot": "/usr/local/go",
-				"editor.formatOnSave": false,
-				"editor.defaultFormatter": "esbenp.prettier-vscode",
-				"editor.codeActionsOnSave": {
-					"source.fixAll.eslint": true,
-					"source.fixAll.stylelint": true
-				},
-				"editor.tabSize": 2,
-				"editor.wordWrap": "on",
-				"files.insertFinalNewline": true,
-				"files.trimTrailingWhitespace": true,
-				"npm.packageManager": "yarn",
-				// sticky scrollの設定
-				"editor.stickyScroll.enabled": true,
-				"editor.stickyScroll.maxLineCount": 5,
-				"workbench.colorCustomizations": {
-					"editorStickyScroll.background": "#00708D",
-					"editorStickyScrollHover.background": "#59A2B5"
-				}
-			}
+						// VSCodeの設定を記述 .vscodeフォルダの代わりになる（らしい）
+						"settings": {
+							"terminal.integrated.defaultProfile.linux": "bash",
+							"go.toolsManagement.checkForUpdates": "local",
+							"go.useLanguageServer": true,
+							"go.goroot": "/usr/local/go",
+							"editor.formatOnSave": false,
+							"editor.defaultFormatter": "esbenp.prettier-vscode",
+							"editor.codeActionsOnSave": {
+								"source.fixAll.eslint": true,
+								"source.fixAll.stylelint": true
+							},
+							"editor.tabSize": 2,
+							"editor.wordWrap": "on",
+							"files.insertFinalNewline": true,
+							"files.trimTrailingWhitespace": true,
+							"npm.packageManager": "yarn",
+							// sticky scrollの設定
+							"editor.stickyScroll.enabled": true,
+							"editor.stickyScroll.maxLineCount": 5,
+							"workbench.colorCustomizations": {
+								"editorStickyScroll.background": "#00708D",
+								"editorStickyScrollHover.background": "#59A2B5"
+							}
+						}
         }
     }
 }
