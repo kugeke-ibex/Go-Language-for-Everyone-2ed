@@ -16,4 +16,6 @@ go install github.com/fatih/gomodifytags@v1.16.0
 go install github.com/josharian/impl@latest
 go install github.com/cweill/gotests/gotests@latest
 go install github.com/ramya-rao-a/go-outline@latest
+go install github.com/mdempsky/gocode@latest
+go install github.com/k0kubun/pp
 go install honnef.co/go/tools/cmd/staticcheck@latest
