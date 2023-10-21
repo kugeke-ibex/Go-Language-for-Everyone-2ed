@@ -49,6 +49,7 @@ func main() {
 		foo: "bar",
 		baz: "qux",
 	}
+
 	fmt.Println(dstruct)
 
 	kv := NewKeyValue()
