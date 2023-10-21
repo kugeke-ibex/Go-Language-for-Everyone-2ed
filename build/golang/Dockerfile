@@ -27,5 +27,6 @@ RUN groupadd --gid ${usergid} ${username} && \
 ENV GOPATH=/home/${username}/go
 ENV PATH=${PATH}:/usr/local/go/bin
 ENV PATH=${PATH}:/go/bin
+ENV PATH=${PATH}:${GOPATH}/bin
 ENV GO111MODULE on
 USER ${username}
