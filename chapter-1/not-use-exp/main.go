@@ -9,7 +9,7 @@ import (
 // 正規表現パターンの生成にはコストがかかるので、初期化時に生成する。
 var wordReg = regexp.MustCompile(`\w+`)
 
-func main () {
+func main() {
 	// 正規表現パッケージregexpパッケージは高機能だが、パフォーマンスに問題あり。
 	// なので、文字列操作はstringsパッケージを基本使う。
 	fmt.Println(strings.HasPrefix("hoge", "h"))

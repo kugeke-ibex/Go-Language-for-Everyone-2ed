@@ -5,7 +5,6 @@ import (
 	"sync"
 )
 
-
 // ハッシュマップをなるべく使わずに、structでtypeを定義する
 type data struct {
 	foo string
@@ -56,8 +55,6 @@ func main() {
 	kv.Set("key", "value")
 	value, ok := kv.Get("key")
 	if ok {
-			fmt.Println(value)
+		fmt.Println(value)
 	}
 }
-
-
