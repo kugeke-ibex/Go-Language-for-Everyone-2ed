@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 	"os/user"
+	// pathパッケージはhttpやftpなどの論理パスを操作するためのパッケージ
 	"path/filepath"
 )
 
