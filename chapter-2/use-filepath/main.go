@@ -5,6 +5,7 @@ import (
 	"os"
 	"os/user"
 	// pathパッケージはhttpやftpなどの論理パスを操作するためのパッケージ
+	// path/filepathパッケージは物理パスを操作するためのパッケージ
 	"path/filepath"
 )
 
