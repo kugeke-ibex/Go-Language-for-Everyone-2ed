@@ -13,6 +13,7 @@ go install golang.org/x/lint/golint@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install github.com/rogpeppe/godef@latest
 go install github.com/rakyll/statik@latest
+go install github.com/gobuffalo/packr/packr@latest
 go install golang.org/x/vuln/cmd/govulncheck@latest
 go install github.com/go-delve/delve/cmd/dlv@master
 go install github.com/haya14busa/goplay/cmd/goplay@v1.0.0
