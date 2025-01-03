@@ -2,10 +2,10 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"io"
 	"net/http"
 	"time"
-	"fmt"
 )
 
 func getHTTP(url string, dst io.Writer) error {
@@ -27,7 +27,7 @@ func getHTTP(url string, dst io.Writer) error {
 	// context deadline exceeded
 	return err
 
-	// キャンセル可能かコンテキストを作る
+	// キャンセル可能なコンテキストを作る
 	ctx, cancel = context.WithCancel(context.Background())
 	defer cancel()
 	// ctxを親にした、1秒でタイムアウトするコンテキストを作る
@@ -41,6 +41,7 @@ func getHTTP(url string, dst io.Writer) error {
 		case <- ctx.Done():
 			fmt.Println("parent", ctx.Err())
 	}
+	return nil
 }
 
 type Context interface {
