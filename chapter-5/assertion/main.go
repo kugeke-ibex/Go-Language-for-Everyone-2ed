@@ -36,6 +36,7 @@ func HandleData(x interface{}) {
 	case map[string]int:
 		// HandleData(map[string]int{"foo": 1})
 		fmt.Printf("Map is %v\n", x)
+	// case map: // mapだけでは不完全な型なのでコンパイルエラー
 	default:
 
 	}
