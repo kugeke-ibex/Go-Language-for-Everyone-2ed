@@ -24,7 +24,9 @@ func (s MySignal) String() string {
 
 func (s MySignal) Signal() {}
 
-func main() {
+func
+
+main() {
 	log.Println("[info] Start")
 	trapSignals := []os.Signal{
 		syscall.SIGHUP,
