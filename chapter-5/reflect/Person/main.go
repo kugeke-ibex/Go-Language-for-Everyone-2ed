@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"io"
 )
 
 type Person struct {
@@ -59,4 +60,21 @@ func main() {
 		f.SetInt(100)
 	}
 	fmt.Println(rvp)
+
+	var rdr io.Reader
+	// 空のio.Reader型の値
+	iv := reflect.TypeOf(rdr)
+	rv := reflect.ValueOf(v)
+	if rv.Type().Implements(iv) {
+		// io.Readerを満たしている？
+	}
+	ptrT := reflect.TypeOf(&rdr)
+	T := ptrT.Elem()
+	if rv.Type().Implements(T) {
+	}
+	// 「interfaceへのポインタ(ただし、その値はnil)」をreflect.TypeOfに渡す。
+	// ポインタ型の場合はたとえ値がnilであっても問題なくそのポインタ型についてのreflect.Typeが返却
+
+	// 1行で宣言する場合
+	var Type = reflect.TypeOf((*io.Reader)(nil)).Elem()
 }
