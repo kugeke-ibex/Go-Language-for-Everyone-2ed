@@ -2,7 +2,6 @@ package main_test
 
 import (
 	"testing"
-	"fmt"
 	calc "github.com/kugeke-ibex/go-language-for-everyone-2ed/chapter-6/calc"
 )
 
