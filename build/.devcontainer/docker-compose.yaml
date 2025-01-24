@@ -6,8 +6,14 @@ services:
     restart: unless-stopped
     container_name: postgres
     volumes:
-      - db-store:/var/lib/postgresql/data
-      - ./db/init:/docker-entrypoint-initdb.d
+      - type: volume
+        source: db-store
+        target: /var/lib/postgresql/data
+        consistency: cached
+      - type: bind
+        source: "./db/init"
+        target: "/docker-entrypoint-initdb.d"
+        consistency: cached
     environment:
       TZ: Asia/Tokyo
       LANG: ja_JP.UTF-8
@@ -16,7 +22,7 @@ services:
       POSTGRES_PASSWORD: postgres_user_passw0rd
     ports:
       - "5432:5432"
-      
+
   golang:
     container_name: golang
     build:
@@ -36,7 +42,7 @@ services:
       /bin/bash
     tty: true
     network_mode: service:db
-  
+
 volumes:
   gohome:
   db-store:
