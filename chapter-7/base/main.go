@@ -18,4 +18,10 @@ func main() {
 
 	rows, err := db.Query("SELECT * FROM users")
 	fmt.Println(rows)
+
+	// Pingでの接続を確認
+	err = db.Ping()
+	if err != nil {
+		log.Fatal(err)
+	}
 }
