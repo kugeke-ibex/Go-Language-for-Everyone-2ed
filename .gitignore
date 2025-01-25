@@ -22,3 +22,6 @@ go.work
 
 # Macのフォルダやファイルに関するmeta情報
 .DS_Store
+
+# 環境変数
+.env
