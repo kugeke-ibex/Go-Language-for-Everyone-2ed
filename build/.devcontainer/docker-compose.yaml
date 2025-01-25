@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   db:
-    image: postgres:16.1-alpine
-    restart: unless-stopped
+    image: postgres:17.1-alpine
+    restart: always
     container_name: postgres
     volumes:
       - type: volume
@@ -20,6 +20,7 @@ services:
       LC_ALL: ja_JP.UTF-8
       POSTGRES_USER: postgres_user
       POSTGRES_PASSWORD: postgres_user_passw0rd
+      POSTGRES_DB: golang_for_everyone
     ports:
       - "5432:5432"
 

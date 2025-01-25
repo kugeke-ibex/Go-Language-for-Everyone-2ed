@@ -1,8 +1,5 @@
--- DB切り替え
-\c golang_for_everyone
-
 -- テーブル作成
-DROP TABLE IF EXISTS chapter_07.users
+DROP TABLE IF EXISTS chapter_07.users;
 
 CREATE TABLE chapter_07.users (
     id SERIAL PRIMARY KEY,
