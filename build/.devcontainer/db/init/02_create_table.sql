@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS chapter_07.users;
 
 CREATE TABLE chapter_07.users (
     id SERIAL PRIMARY KEY,
-    name TEXT NOT NULL,
+    name TEXT NULL,
     age INTEGER NOT NULL
 );
 
