@@ -5,6 +5,12 @@ import (
 	"github.com/go-gorp/gorp/v3"
 )
 
+// ORMではstructのフィールドにタグを付ける
+// Beego orm:
+// gorm gorm:
+// xorm xorm:
+// gorp db:
+
 type Comment struct {
 	ID int64 `db:"id,primarykey,autoincrement"`
 	Name string `db:"name,notnull,default:'名無し',size:200"`
